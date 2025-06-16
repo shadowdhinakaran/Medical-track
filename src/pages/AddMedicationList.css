@@ -1,0 +1,111 @@
+/* Container for the whole list */
+.med-list {
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f6f8;
+  border-radius: 8px;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Each medication item */
+.med-item {
+  padding: 16px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Action buttons container */
+.action-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Buttons inside action group or edit form */
+.action-buttons button,
+.edit-form button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Delete button */
+.action-buttons .delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Generic buttons (e.g., Update, Mark Taken) */
+.action-buttons button:not(.delete-btn),
+.edit-form button:not(.cancel-btn) {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Cancel button */
+.cancel-btn {
+  background-color: #bdc3c7;
+  color: black;
+}
+
+/* Inputs for edit mode */
+.edit-form input {
+  margin: 5px 6px;
+  padding: 8px;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Adherence section */
+.adherence-display {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0d6efd;
+  background: #e7f1ff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ------------------------------
+   ✅ Responsive Adjustments
+   ------------------------------ */
+@media (max-width: 768px) {
+  .med-list {
+    padding: 16px;
+    margin: 0 10px;
+    width: 100%;
+  }
+
+  .med-item {
+    padding: 14px;
+  }
+
+  .edit-form input {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .action-buttons button {
+    width: 100%;
+    max-width: 280px;
+  }
+}

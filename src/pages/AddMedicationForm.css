@@ -1,0 +1,109 @@
+/* Container */
+.med-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.med-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input containers */
+.med-form div {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.med-form input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+/* Input focus */
+.med-form input[type="text"]:focus {
+  border-color: #4a90e2;
+}
+
+/* Error input */
+.input-error {
+  border-color: red !important;
+}
+
+/* Error messages */
+.error-msg {
+  color: #d32f2f !important; /* Better contrast red */
+  font-size: 0.875rem; /* 14px is readable but not overwhelming */
+  margin: 6px 0 0 0; /* margin-top only */
+  text-align: left;
+  font-weight: 500;
+}
+
+
+/* Submit button */
+.med-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+.med-form button:hover {
+  background-color: #357ac8;
+}
+
+/* Navigation (Home) */
+.med-form p {
+  margin-top: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+.med-form p:hover {
+  color: #2a5e9e;
+}
+
+/* 🔁 Responsive Design */
+@media (max-width: 600px) {
+  .med-form {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .med-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .med-form input[type="text"],
+  .med-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .error-msg {
+    font-size: 0.8rem;
+  }
+}

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Check, Image, Camera, Clock } from "lucide-react";
 import { format } from "date-fns";
 
+
 interface MedicationTrackerProps {
   date: string;
   isTaken: boolean;
@@ -82,7 +83,7 @@ const MedicationTracker = ({ date, isTaken, onMarkTaken, isToday }: MedicationTr
 
   return (
     <div className="space-y-6">
-      <Card className="hover:shadow-md transition-shadow">
+     {/*  <Card className="hover:shadow-md transition-shadow">
         <CardContent className="flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
@@ -98,7 +99,7 @@ const MedicationTracker = ({ date, isTaken, onMarkTaken, isToday }: MedicationTr
             {dailyMedication.time}
           </Badge>
         </CardContent>
-      </Card>
+      </Card> */}
 
       {/* Image Upload Section */}
       <Card className="border-dashed border-2 border-border/50">
@@ -144,20 +145,20 @@ const MedicationTracker = ({ date, isTaken, onMarkTaken, isToday }: MedicationTr
       </Card>
 
       {/* Mark as Taken Button */}
-      <Button
+      {/*   <Button
         onClick={handleMarkTaken}
         className="w-full py-4 text-lg bg-green-600 hover:bg-green-700 text-white"
         disabled={!isToday}
       >
         <Check className="w-5 h-5 mr-2" />
         {isToday ? "Mark as Taken" : "Cannot mark future dates"}
-      </Button>
-
+      </Button> 
+ 
       {!isToday && (
         <p className="text-center text-sm text-muted-foreground">
           You can only mark today's medication as taken
         </p>
-      )}
+      )} */}
     </div>
   );
 };
