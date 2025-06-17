@@ -1,42 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.box{
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: rgb(119, 118, 118);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
 }
-.input{
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 20px;
+
+.box {
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(119, 118, 118);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.box button{
-    background-color: aqua;
-    color: black;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 10px 20px ;
-    border-radius: 10px;
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: none;
 }
-#any{
-    margin-top: 20px;
-    color:white;
-    cursor: pointer;
-   
+
+.box button {
+  background-color: aqua;
+  color: black;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
 }
-#button-ptn{
-    background-color: blue;
-    color: white;
-    margin-left: 500px;
-    padding: 10px 20px;
-    border-radius: 10px;
+
+.box button:hover {
+  background-color: #00dddd;
+}
+
+#any {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Home-btn{
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Optional: Enhance on very small devices */
+@media (max-width: 480px) {
+  .box {
+    padding: 15px;
+  }
+
+  .input,
+  .box button {
+    padding: 14px;
+    font-size: 0.95rem;
+  }
 }

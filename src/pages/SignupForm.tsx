@@ -50,7 +50,7 @@ const SignupForm: React.FC = () => {
         />
         <button type="submit">Register</button>
       </form>
-        <p style={{color:"white",cursor:'pointer'}} onClick={handleNavigate}>Home</p>
+        <p style={{color:"white",cursor:'pointer'}} onClick={handleNavigate} className='Home-btn'>Home</p>
     </div>
   );
 };

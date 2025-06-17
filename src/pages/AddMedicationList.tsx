@@ -33,12 +33,7 @@ const AddMedicationList: React.FC<AddMedicationListProps> = ({
               <span style={{ color: med.takenToday ? "green" : "red" }}>
                 {med.takenToday ? "Taken Today ✅" : "Not Taken ❌"}
               </span>
-              {/*  <div className="action-buttons">
-                <button onClick={() => toggleTaken(med)}>
-                  {med.takenToday ? 'completed' : 'Mark as Taken'} 
-                  
-                </button>
-              </div> */}
+           
               <div className="action-buttons">
                 <button
                   onClick={() => toggleTaken(med)}
